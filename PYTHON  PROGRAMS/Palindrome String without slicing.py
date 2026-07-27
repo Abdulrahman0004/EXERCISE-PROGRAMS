@@ -1,14 +1,14 @@
-str1 = 'malayalam'
+text = input()
+text = text.replace(" ", "").lower()
 low = 0
-high = len(str1)-1
+high = len(text)-1
 
 while low <= high:
-    if str1[low] != str1[high]:
+    if text[low] != text[high]:
         print("It is not a Palindrome")
         break
     else:
         low += 1
         high -= 1
 else:
-    print("It is Palindrome")
-    
+    print("It is a Palindrome")
